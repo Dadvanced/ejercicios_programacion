@@ -15,12 +15,13 @@ import java.util.Scanner;
                 Scanner s = new Scanner(System.in);
                 
                 int numero = Integer.parseInt(s.nextLine());
+                int cuenta;
                 
-                for (int i = 1; i >5; i++) {
-                numero += i;
+                for (int i = 1; i <=5; i++) {
+                cuenta = numero + i;
                 System.out.println("\n _____________________________________ \n");
-                System.out.println(numero + " " + " " + (numero * numero) + " " + " " + (numero * numero * numero));
-                i++;
+                System.out.println(cuenta + " " + " " + (cuenta * cuenta) + " " + " " + (cuenta * cuenta * cuenta));
+                
             }
                 
             }
