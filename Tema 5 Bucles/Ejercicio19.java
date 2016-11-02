@@ -24,4 +24,27 @@ public class Ejercicio19 {
     System.out.print("Carácter: ");
     
     String c = s.nextLine();
+    int espacios;
+    espacios = height - 1;
+    int altura = 1;
     
+    for (int j = 1; j <= height; j++) {
+      
+      
+      for (int i = 1; i <= espacios; i++) {
+        System.out.print(" ");
+      }
+      
+      for (int i = 1; i < altura * 2; i++) {
+        System.out.print(c);
+      }
+      
+      System.out.println();
+      
+      altura ++;
+      espacios--;
+      
+    }
+    
+  }
+}
