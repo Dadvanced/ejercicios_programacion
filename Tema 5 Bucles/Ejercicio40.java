@@ -62,7 +62,7 @@ public class Ejercicio40 {
     ///////////////////parte inferior del rombo ///////
     
     espaciosExternos = 1;
-    espaciosInternos -=2;
+    espaciosInternos = espaciosInternos - 2;
     altura = 1;
     
     while (altura < (alturaIntroducida / 2) +1) {
@@ -73,11 +73,11 @@ public class Ejercicio40 {
       
       System.out.print("*");
       
-      for (int i = 1; i < espaciosInternos; i++) {
+      for (int i = 2; i < espaciosInternos; i++) {
         System.out.print(" ");
       }
       
-      if (altura <= (alturaIntroducida / 2) + 1) {
+      if (espaciosInternos > 1) {
         System.out.print("*");
       }
       
