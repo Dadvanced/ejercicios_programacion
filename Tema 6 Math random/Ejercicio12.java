@@ -7,23 +7,10 @@
 
 public class Ejercicio12 {
   public static void main(String[] args) {
-    System.out.println("Vamos a simular la tirada de 2 dados que se lanzarán");
-    System.out.println("una y otra vez hasta que ambos dados tengan el mismo valor.");
-    System.out.println("_______________________________________________");
-    System.out.println("\nPulse INTRO para comenzar las tiradas.");
-    System.console().readLine(); //obliga al usuario a pulsar INTRO para continuar el programa
+    System.out.println("Vamos a llenar la pantalla de carácteres aleatorios");
+    System.out.println("(a lo Matrix) con el código ASCII entre el 32 y el 126.");
+    System.out.println("_____________________________________________");
+    System.out.println("Pulse INTRO para que empiece la magia.");
+    System.console()readLine();
     
-    int dadoA = 0;
-    int dadoB = 0;
     
-    do {
-      dadoA = (int)(Math.random()*6) + 1;
-      System.out.print(dadoA + " ");
-      dadoB = (int)(Math.random()*6) + 1;
-      System.out.print(dadoB);
-      
-      System.out.println();
-    } while (dadoA != dadoB);
-    
-  }
-}
