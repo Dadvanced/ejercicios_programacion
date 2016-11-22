@@ -21,6 +21,7 @@ public class Ejercicio16 {
         
     do {
       System.out.println("\nPulse INTRO para jugar");
+      System.out.println("Monedas: " + monedas);
       System.console().readLine();
       monedas--;
       
@@ -73,9 +74,9 @@ public class Ejercicio16 {
       
           
       /////////////////comprueba si has ganado o perdido.
-      if (a == b || a == c) {
-        System.out.println("\n¡Bien! Ha recuperado su moneda.");
-        monedas++;
+      if (a == b && a == c && b == c) {
+        System.out.println("\n¡Enhorabuena! Ha ganado 10 monedas.");
+        monedas +=10;
         i = 1;
       } else if (b == c) {
         System.out.println("\n¡Bien! Ha recuperado su moneda.");
@@ -85,9 +86,9 @@ public class Ejercicio16 {
         System.out.println("\n¡Bien! Ha recuperado su moneda.");
         monedas++;
         i = 1;
-      } else if (a == b && a == c && b == c) {
-        System.out.println("\n¡Enhorabuena! Ha ganado 10 monedas.");
-        monedas +=10;
+      } else if (a == b || a == c) {
+        System.out.println("\n¡Bien! Ha recuperado su moneda.");
+        monedas++;
         i = 1;
       } else {
         
