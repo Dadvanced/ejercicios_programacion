@@ -22,15 +22,17 @@ public class Ejercicio14 {
     int numero = 0; //la variable que usará el programa para intentar adivinar el número
     boolean acertado = false;
     String respuesta = (" "); //ésta variable almacena la respuesta del usuario
-    int numeroMinimo = 0; //controlará dónde empieza el programa a buscar tu número
-    int rango = 100; //controla el rango de número entre los que buscará el número del usuario
+    int rangoMinimo = 0;
+    int rangoMaximo = 100;
+    
+    
     
     do {
-                 
+                
       System.out.print("¿Has pensado éste número?: ");
-      numero = (int)(Math.random()*rango) + numeroMinimo;
+      numero = (int)(Math.random() * (rangoMaximo - rangoMinimo) + rangoMinimo);
       System.out.print(numero);
-      
+            
       System.out.println(); //salto de línea
       
       System.out.print("Responde con \"s\" o \"n\": ");
@@ -48,28 +50,43 @@ public class Ejercicio14 {
             
             
       if (respuesta.equals("s") && !acertado) {
-        numeroMinimo = numero +1;
-        
-        if (numero > rango) {
-        rango = Math.abs(numero - rango);
-        } else {
-          rango = 100 - numero;
-          }
-           //reajustamos el rango de valores
+        rangoMinimo = numero + 1;
         intentos--;
         System.out.println("\nIntentos: " + intentos);
       } else if (respuesta.equals("n") && !acertado) {
-        rango = numero - numeroMinimo;
+        rangoMaximo = numero + 1;
         intentos--;
         System.out.println("\nIntentos: " + intentos);
       }
+      
          
+      
       respuesta = (" ");
       System.out.println("______________________________________");
       System.out.println("\nPulse INTRO para continuar.");
       System.console().readLine();
-    } while (intentos > 0 && !acertado);
+    } while (intentos > 1 && !acertado);
     
+    //////////////////////última oportunidad
+    
+    if (!acertado) {
+      numero = (int)(Math.random() * (rangoMaximo - rangoMinimo) + rangoMinimo);
+      System.out.print("\n¿Has pensado éste número?: ");
+      System.out.print(numero);
+    
+    System.out.println(); //salto de línea
+      
+      System.out.print("Responde con \"s\" o \"n\": ");
+      respuesta = n.nextLine();
+      
+      if (respuesta.equals("s")) { //pregunta si ha acertado el número
+        System.out.println("¡¡¡Ole!!!");
+        acertado = true;
+      } else {
+        intentos--;
+      }
+      
+    }
     
     if (intentos == 0 && !acertado) {
       System.out.println("\nNo encontré tu número, has ganado :(");
