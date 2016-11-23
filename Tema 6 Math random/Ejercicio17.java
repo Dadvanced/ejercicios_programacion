@@ -20,6 +20,7 @@ public class Ejercicio17 {
     int anchura = Integer.parseInt(n.nextLine());
     
     int area = (alturaIntroducida - 2) * (anchura - 2); //averiguamos el área de la pecera
+    int posicionPez = (int)(Math.random()*area) + 1;
     int contador = 1; // cuando el contador sea igual al área, dibujaremos al pececito 
     
     for (int i = 1; i < alturaIntroducida; i++) {
@@ -35,7 +36,7 @@ public class Ejercicio17 {
       System.out.print("*"); //dibuja el primer asterísco
       
       for (int f = 1; f <= anchura - 2; f++) { //inserta los espacios internos
-        if (contador++ == area) {
+        if (contador++ == posicionPez) {
           System.out.print("&");
           } else {
             System.out.print(" ");
