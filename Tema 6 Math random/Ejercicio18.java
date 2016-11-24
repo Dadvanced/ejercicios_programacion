@@ -14,83 +14,105 @@ public class Ejercicio18 {
     System.out.println("Pulse INTRO para sacar 3 colores.");
     System.console().readLine();
         
-    int colores = 0;
-    int colorCorrecto = 3; //hasta que no saque 3 colores correctos el programa no parará
+    
     int a = 0; //guarda los valores de los colores para posteriormente comprobar si se repiten o no
     int b = 0;
-    int c = 9; //le asignamos un valor diferente a sus antecesores para evitar conflictos en el último "if"
-    int i = 0;
-    String stringColores = (" ");
+    int c = 9; 
     
-        
+    String color1 = (" ");
+    String color2 = (" ");
+    String color3 = (" ");
+    
     do {
-           
-      for (i = 1; i <= 3; i++) { //saca los 3 colores
-        colores = (int)(Math.random()*6) + 1;
-        
-        switch (colores) {
-          case 1:
-          stringColores = ("rojo");
+      a = (int)(Math.random()*6) + 1;
+      switch (a) { //se le asigna a "a" un color
+        case 1:
+          color1 = ("rojo");
           break;
           
           case 2:
-          stringColores = ("azul");
+          color1 = ("azul");
           break;
           
           case 3:
-          stringColores = ("verde");
+          color1 = ("verde");
           break;
           
           case 4:
-          stringColores = ("amarillo");
+          color1 = ("amarillo");
           break;
           
           case 5:
-          stringColores = ("violeta");
+          color1 = ("violeta");
           break;
           
           case 6:
-          stringColores = ("naranja");
+          color1 = ("naranja");
           break;
           
           default:
         } //switch colores
         
-        if ( i == 1 && colorCorrecto == 3) { //pinta el primer color
-          System.out.print(stringColores + " ");
-          colorCorrecto--;
-        }
-        
-        
-        
-                
-        switch (i) { //modificamos el valor de las variables para posteriormente compararlas entre ellas
+      b = (int)(Math.random()*6) + 1;
+      switch (b) { //se le asigna a "a" un color
         case 1:
-        a = colores;
-        break;
-        
-        case 2:
-        b = colores;
-        break;
-        
-        case 3:
-        c = colores;
-        break;
-                        
-        default:
-      } //switch "i"
-    }//for    cierra el for de los 3 colores
-      
-      
+          color2 = ("rojo");
+          break;
           
-      /////////////////comprueba que no se repita ningún color
-      if (a != b && a != c && b != c) {
-        System.out.print(stringColores + " ");
-        colorCorrecto--;
-      }      
-      
-    } while (colorCorrecto > 0);
-    
+          case 2:
+          color2 = ("azul");
+          break;
+          
+          case 3:
+          color2 = ("verde");
+          break;
+          
+          case 4:
+          color2 = ("amarillo");
+          break;
+          
+          case 5:
+          color2 = ("violeta");
+          break;
+          
+          case 6:
+          color2 = ("naranja");
+          break;
+          
+          default:
+        } //switch colores
         
+      c = (int)(Math.random()*6) + 1;
+      switch (c) { //se le asigna a "a" un color
+        case 1:
+          color3 = ("rojo");
+          break;
+          
+          case 2:
+          color3 = ("azul");
+          break;
+          
+          case 3:
+          color3 = ("verde");
+          break;
+          
+          case 4:
+          color3 = ("amarillo");
+          break;
+          
+          case 5:
+          color3 = ("violeta");
+          break;
+          
+          case 6:
+          color3 = ("naranja");
+          break;
+          
+          default:
+        } //switch colores
+    } while ((a == b) || (a == c) || (b == c));
+     
+    System.out.println("\n" + color1 + (" ") + color2 + (" ") + color3);     
+            
   }
 }
