@@ -23,16 +23,18 @@ public class Ejercicio25 {
     for (int i = 1; i <= 100; i++) {
       numero = (int)(Math.random()*191) + 10;
       
-      for (int j = 1; j < numero; j++) {
-        if (numero % i == 0) {
+      // com
+      for (int j = 2; j < numero; j++) {
+        if (numero % j == 0) {
           esPrimo = false;
         }
+      }
         
-        if (numero % 5 == 0) {
+      // 
+      if (numero % 5 == 0) {
           esMultiplo5 = true;
-        }
+      }
                  
-      }//for de comprobar si es primo o múltiplo de 5
       
       if (esPrimo) {
           System.out.print(" #" + numero + "# ");
