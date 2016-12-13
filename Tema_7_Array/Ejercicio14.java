@@ -15,17 +15,10 @@ public class Ejercicio14 {
     
     Scanner s = new Scanner(System.in);
     
-    String[] colores = new String[9];
-    colores[0] = "verde";
-    colores[1] = "rojo";
-    colores[2] = "azul";
-    colores[3] = "amarillo";
-    colores[4] = "naranja";
-    colores[5] = "rosa";
-    colores[6] = "negro";
-    colores[7] = "blanco";
-    colores[8] = "morado";
-    
+    String[] colores = {
+      "verde", "rojo", "azul", "amarillo", "naranja", "rosa", "negro", "blanco", "morado"
+    };
+        
     String[] palabras = new String[8];
     
     System.out.println("Por favor, introduzca 8 palabras aleatorias separadas por un INTRO: ");
