@@ -15,9 +15,10 @@ public class Ejercicio17 {
     System.out.println("________________________________________________________________________");
     
     int[] array = new int[10];
-    boolean numeroCorrecto = false;
     int numero = 0;
-    int indice = 0;
+    boolean numeroCorrecto = false;
+    
+    
     Scanner n = new Scanner(System.in);
     
     System.out.println("\n┌─────────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐");
@@ -36,38 +37,30 @@ public class Ejercicio17 {
     System.out.println();
     System.out.println();
     
-    do {
-      System.out.println("Introduzca un número que esté en el array mostrado anteriormente: ");
+    //while comprueba que le numero esté dentro del array ////////////////////////////7
+    while (!numeroCorrecto) {
+      System.out.println("Por favor, introduzca un número que esté dentro del array: ");
       numero = Integer.parseInt(n.nextLine());
       
-      for (int i = 0; i < 10; i++) {
+      for (int i = 0; i < 9; i++) {
         if (array[i] == numero) {
           numeroCorrecto = true;
-          indice = i; //con ésta variable sabremos desde qué posición vamos a desplazar el array
         }
       }
-    } while (!numeroCorrecto);
+    } 
+    ///////////////////////////////////////////////////////////////7///////////////////
     
-    int indiceFinal = 9;
-    int indiceInicial = 0;
-    int indiceAux = indice; //usaremos éste auxiliar debido a que modificaremos el valor de índice
-    int[] array2 = new int[10];
     
-    do {
-      if (indice < indiceFinal) {
-        array2[indice + 1] = array[indice];
-        indice++;
+    while (numero != array[0]) {
+      int aux = array[9];
+      
+      for (int i = 9; i > 0; i--) {
+        array[i] = array[i - 1]; 
       }
       
-      
-      if (indice == 9) {
-        array2[indiceInicial + 1] = array[indiceInicial];
-        indiceInicial++;
-      }
-       
-    } while (indiceInicial <= indiceAux && array2[0] != numero);
-  
-    array[0] = numero;
+      array[0] = aux;  
+    } 
+    
   
     System.out.println("\n┌─────────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐");
     System.out.print("│ Indice  ");
@@ -77,7 +70,7 @@ public class Ejercicio17 {
     System.out.println("│\n├─────────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤");    
     System.out.print("│ Valor   ");
     for (int i = 0; i < 10; i++) {
-      System.out.printf("│%4s ",array2[i]);
+      System.out.printf("│%4s ",array[i]);
       }
     System.out.println("│\n└─────────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘");
   }
