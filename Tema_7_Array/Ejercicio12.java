@@ -16,12 +16,12 @@ public class Ejercicio12 {
     System.out.print("Por favor, introduzca 10 números separados por un INTRO: ");
         
     Scanner n = new Scanner(System.in);
-    int[] array1 = new int[10];
+    int[] array = new int[10];
     int inicial = 0;
     int indiceFinal = 0;
     
     for (int i = 0; i < 10; i++) { //se introducen los 10 valores del array
-      array1[i] = Integer.parseInt(n.nextLine());
+      array[i] = Integer.parseInt(n.nextLine());
     }
     
     System.out.printf("\n                            ARRAY ORIGINAL                             ");
@@ -33,7 +33,7 @@ public class Ejercicio12 {
     System.out.println("│\n├────────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤");    
     System.out.print("│ Valor  ");
     for (int i = 0; i < 10; i++) {
-      System.out.printf("│%4s ", array1[i]);
+      System.out.printf("│%4s ", array[i]);
     }
     System.out.println("│\n└────────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘");
     
@@ -50,10 +50,21 @@ public class Ejercicio12 {
       
       if (inicial > indicefinal) {
         System.out.println("El indice inicial debe ser menor al índice final.");
-      } while (inicial > indiceFinal);
+      }
+    } while (inicial > indiceFinal);
       
       
-      int[] array2 = new int[10];
-      array2[indiceFinal] = array1[inicial];
       
+      while (inicial) {
+        int aux = array[9];
       
+        for (int i = 9; i > 0; i--) {
+          array[final] = array[final + 1]; 
+        }
+      
+        array[0] = aux;  
+      }
+      
+    }
+  }
+}
