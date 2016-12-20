@@ -68,7 +68,7 @@ public class Ejercicio07 {
       System.out.print("Coordenada y: ");
       y = Integer.parseInt(System.console().readLine());
       
-      if (Math.abs (x - minaX <= 1)) && (Math.abs (y - minaY <= 1))) {
+      if ((Math.abs(x - minaX) <= 1) && (Math.abs(y - minaY) <= 1)) {
         System.out.println("¡Cuidado! Hay una mina cerca.");
       }
       
