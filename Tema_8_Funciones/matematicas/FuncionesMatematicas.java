@@ -7,7 +7,7 @@
 
 package matematicas;
 
-public class funciones_matematicas {
+public class FuncionesMatematicas {
   
   /**
 * Comprueba si un número es capicúa o no.
@@ -23,7 +23,7 @@ public static boolean esCapicua(int x) {
   int volteado = 0;
   
   while (a > 0) {
-    volteado = volteado *= 10 + a % 10;
+    volteado = volteado * 10 + a % 10;
     a /= 10;
   }
   
@@ -112,7 +112,7 @@ public static int digitos(int x) {
     int volteado = 0;
   
   while (x > 0) {
-    volteado = volteado *= 10 + x % 10;
+    volteado = volteado * 10 + x % 10;
     x /= 10;
   }
   
