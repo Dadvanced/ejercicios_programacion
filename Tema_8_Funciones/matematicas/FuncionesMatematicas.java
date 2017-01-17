@@ -238,14 +238,16 @@ public static int pegaPorDelante(int n, int x) {
 /* Toma como parámetros las posiciones "inicial" y "final" dentro de un número y devuelve
 * el trozo correspondiene.
 * @param n es el número entero introducido por el usuario
+* @param inicial es el número de dígitos que se tomará como posición inicial
+* @param dFinal es el número de dígitos que se tomará como posición final
 *
 * @return <code>numeroTroceado</code> devuelve el trozo del número introducido  
 */ 
  
- public static int trozoDeNumero(int n) {
+ public static int trozoDeNumero(int n, int inicial, int dFinal) {
    int numeroEntero = n;
-   numeroEntero = quitaPorDelante(n, 1);
-   numeroEntero = quitaPorDetras(n, 1);
+   numeroEntero = quitaPorDelante(n, inicial);
+   numeroEntero = quitaPorDetras(n, dFinal);
    
    return numeroEntero;
  }
