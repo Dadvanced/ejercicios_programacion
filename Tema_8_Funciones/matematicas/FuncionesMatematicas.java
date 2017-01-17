@@ -75,7 +75,7 @@ public static int siguientePrimo(int x) {
 public static int potencia(int x, int y) {
   int potencia = 1;
   
-  for (int i = 0; i <= y; i++) {
+  for (int i = 0; i < y; i++) {
     potencia *= x;
   }
   return potencia;
