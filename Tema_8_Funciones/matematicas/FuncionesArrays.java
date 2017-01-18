@@ -44,5 +44,22 @@ public class FuncionesArrays {
   }
 
 
+/**
+* Devuelve el valor mínimo de un array que se pasa como parámetro
+* @param x es el array que se pasa como parámetro
+* @return <code>minimo</code> devuelve el valor mínimo que se encuentra en un array 
+*/
 
+  public static int minimoArrayInt(int x[]) {
+    int minimo = Integer.MAX_VALUE;
+    
+    for (int i = 0; i < x.length; i++) {
+      if (x[i] < minimo) {
+      minimo = x[i];
+      }//if
+    }//for
+    return minimo;
+  }
+  
+  
 }
