@@ -291,6 +291,27 @@ public static int binaryToDec(int n) {
 } 
  
  
+/*Convierte un número decimal a binario.
+* 
+* @param n es el número introducido por el usuario (decimal)
+* 
+* @return <code>binario</code> devuelve el número decimal convertido a binario 
+*/ 
+ 
+ public static int decToBinary(int n) {
+   int binario = 0;
+    
+    while (n > 0) {
+      binario = binario + n % 2;
+      n /= 2;
+      binario *= 10;
+    }
+    
+    int volteado = FuncionesMatematicas.voltea(binario);
+    return volteado;
+  }
+    
+ 
  
 
 }
