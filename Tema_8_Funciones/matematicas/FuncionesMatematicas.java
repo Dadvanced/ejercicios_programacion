@@ -252,7 +252,7 @@ public static int pegaPorDelante(int n, int x) {
    return numeroEntero;
  }
  
-/* Pega 2 números para juntar 1.
+/* Pega 2 números para crear 1.
 * 
 * @param a es el primer número introducido por el usuario
 * @param b es el segundo número introducido por el usuario
@@ -268,5 +268,29 @@ public static int pegaPorDelante(int n, int x) {
    
    int numeroNuevo = a + b;
    return numeroNuevo;
- } 
+ }
+ 
+/* Convierte un número binario a decimal.
+* 
+* @param n es el número introducido por el usuario (binario)
+* 
+* @return <code>decimal</code> devuelve el número binario convertido a decimal 
+*/ 
+ 
+
+public static int binaryToDec(int n) {
+  int digitos = digitos(n); //obtenemos el número de dígitos del número introducido
+  int decimal = 0;
+    
+  for (int i = 0; i < digitos; i++) {
+    decimal = decimal + ((n % 10) * potencia(2, i));
+    n /= 10;
+  }
+  
+  return decimal;
+} 
+ 
+ 
+ 
+
 }

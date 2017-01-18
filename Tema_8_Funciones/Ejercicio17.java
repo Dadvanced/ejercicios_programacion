@@ -18,16 +18,7 @@ public class Ejercicio17 {
     System.out.print("Por favor, introduzca un número binario (0 y 1): ");
     int binario = Integer.parseInt(n.nextLine());
     
-    int digitos = FuncionesMatematicas.digitos(binario); //obtenemos el número de dígitos del número introducido
-    int decimal = 0;
-    
-    for (int i = 0; i < digitos; i++) {
-      decimal = decimal + ((binario % 10) * FuncionesMatematicas.potencia(2, i));
-      binario /= 10;
-    }
-    
-    System.out.println("\n " + decimal);
-    
+    System.out.println(FuncionesMatematicas.binaryToDec(binario));
   }
 }
     
