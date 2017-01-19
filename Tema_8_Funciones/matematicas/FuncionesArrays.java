@@ -61,5 +61,21 @@ public class FuncionesArrays {
     return minimo;
   }
   
+  /**
+   * Devuelve el valor máximo de un array de enteros
+   * @param x array unidimiensional de números enteros
+   * return <code>max>/code> devuelve el número máximo de un array introducido por parámetros
+   */
+  
+  public static int maximoArrayInt(int x[]) {
+    int maximo = Integer.MIN_VALUE;
+    
+    for (int i = 0; i < x.length; i++) {
+      if (x[i] > maximo) {
+        maximo = x[i];
+      }
+    }
+    return maximo;
+  }
   
 }
