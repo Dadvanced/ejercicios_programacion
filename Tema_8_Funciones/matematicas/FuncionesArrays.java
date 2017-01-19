@@ -99,4 +99,38 @@ public class FuncionesArrays {
   }
   
   
+  /*
+   * Dice si un número está o no dentro de un array
+   * 
+   * @param x array unidimiensional de números enteros
+   * @param n número que se buscará dentro del array
+   * return <code>true</code> devuelve "verdadero" si el número se encuentra dentro del array
+   */
+  
+  public static boolean estaEnArrayInt(int x[], int n) {
+    for (int numero : x)  {
+      if (n == numero) {
+        return true;
+      }
+    }
+    return false;
+  }
+  
+  
+   /** Busca un número en un array y devuelve la posición (índice) en la que se encuentra
+   * 
+   * @param x array unidimiensional de números enteros
+   * @param n número que se buscará dentro del array
+   * return <code>posicion</code> devuelve -1 en caso de que no se encuentre en el array
+   */
+   
+   public static int posicionEnArray(int x[], int n) {
+     for (int i = 0; i < x.length; i++) {
+       if (n == x[i]) {
+         return i;
+       }
+     }
+     return -1;
+   }
+  
 }
