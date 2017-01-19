@@ -78,4 +78,25 @@ public class FuncionesArrays {
     return maximo;
   }
   
+  
+  /**
+   * Devuelve la media del array que se pasa como parámetro
+   * 
+   * @param x array unidimiensional de números enteros
+   * return <code>media</code> devuelve la media del array introducido
+   */
+  
+  public static int mediaArrayInt(int x[]) {
+    int media = 0;
+    int contador = 0;
+    
+    for (int i = 0; i < x.length; i++) {
+      media += x[i];
+      contador++;
+    }
+    
+    return media / contador;
+  }
+  
+  
 }
