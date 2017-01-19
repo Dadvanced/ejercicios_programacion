@@ -132,5 +132,27 @@ public class FuncionesArrays {
      }
      return -1;
    }
+   
+   
+   
+   /** Voltea un array 
+   * 
+   * @param x array unidimiensional de números enteros
+   * return <code>arrayVolteado</code> devuelve el array volteado
+   */
+   
+   public static int[] volteaArrayInt(int x[]) {
+     int[] arrayVolteado = new int[x.length];
+     int indiceTotal = x.length;
+     
+     for (int i = 0; i < x.length; i++) {
+       arrayVolteado[i] = x[indiceTotal - 1];
+       indiceTotal--;
+     }
+     return arrayVolteado;
+   }
+   
+   
+   
   
 }
