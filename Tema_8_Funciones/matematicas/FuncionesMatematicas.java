@@ -180,7 +180,8 @@ public static int quitaPorDetras(int n, int x) {
   int numeroCortado = n;
   
   while (x > 0) {
-    numeroCortado /= 10;
+    numeroCortado = numeroCortado / 10;
+    x--;
   }
   
   return numeroCortado;
@@ -199,9 +200,10 @@ public static int quitaPorDetras(int n, int x) {
    
    while (x > 0) {
      numeroCortado /= 10;
+     x--;
    }
-   
-   return numeroCortado;
+      
+   return voltea(numeroCortado);
  }
  
  

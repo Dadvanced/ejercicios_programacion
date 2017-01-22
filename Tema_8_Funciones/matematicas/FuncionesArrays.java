@@ -154,5 +154,38 @@ public class FuncionesArrays {
    
    
    
+   /** Rota n posiciones a la derecha los números de un array
+   * 
+   * @param x array unidimiensional de números enteros
+   * @param n número de veces que se rotará el array hacia la derecha
+   * return <code>arrayRotado</code> devuelve el array rotado
+   */
+   
+   public static int[] rotaDerechaArrayInt(int x[], int n) {
+     
+     int[] arrayRotado = new int[x.length];
+     for(int i = x.length-1; i > 0; i--) {
+       arrayRotado[i] = x[i];
+     }
+     
+     int posicionFinal = x.length - 1;
+     int aux = 0;
+     
+     while (n > 0) {
+       for (int i = posicionFinal; i > 0; i--) {
+         aux = arrayRotado[posicionFinal];
+         arrayRotado[i] = arrayRotado[i - 1];
+       }
+       
+       arrayRotado[0] = aux;
+       n--;
+     }
+     return arrayRotado;
+   }
+       
+       
+     
+   
+   
   
 }
