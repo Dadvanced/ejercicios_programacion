@@ -158,7 +158,7 @@ public class FuncionesArrays {
    * 
    * @param x array unidimiensional de números enteros
    * @param n número de veces que se rotará el array hacia la derecha
-   * return <code>arrayRotado</code> devuelve el array rotado
+   * return <code>a</code> devuelve el array rotado
    */
    
    public static int[] rotaDerechaArrayInt(int[] x, int n) {
@@ -175,7 +175,7 @@ public class FuncionesArrays {
       a[0] = aux;
     }
       
-    return arrayRotado;
+    return a;
   }
   
   /**
