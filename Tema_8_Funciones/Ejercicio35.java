@@ -33,7 +33,6 @@ public class Ejercicio35 {
   
   
   public static String convierteEnPalotes(int n) {
-    int numero = n; //guardamos el valor original del número introducido
     int volteado = FuncionesMatematicas.voltea(n);
     int digitos = FuncionesMatematicas.digitos(n);
     int numeroARestar = 0; //con esta variable contaremos el número de palitos según el número
