@@ -17,28 +17,43 @@ Instancias: Fernando Alonso, Schumacker...
 ### pirita, rocinante, milu, snoopy, gato, pluto, animal, javier, bucefalo, pegaso,
 ### ayudante_de_santa_claus, cuarzo, laika, persona, pato_lucas.
 
-Para compilar el fichero `HolaMundo.java` ejecutamos la siguiente
-línea de comandos (es necesario tener instalado el *JDK*):
+Persona: paula, tomb, silvestre, javier, laika.
 
-```console
-javac HolaMundo.java
-```
+Animal: goofy, gardfiel, perro, caballo, rocinante, milu, snoopy, gato, pluto, bucefalo,
+pegaso, ayudante_de_santa_claus, pato_lucas.
 
-Por último, para ejecutar el programa tecleamos:
+Mineral: pirita, cuarzo, 
 
-```console
-java HolaMundo
-```
+## Ejercicio 3:
 
-### Con Geany
+### ¿Cuáles serían los atributos de la clase vivienda? ¿Qué subclases se te ocurren?
 
-Con la tecla **F5** se compila el archivo
-Y con **F8** se ejecuta (si no hay errores)
+Atributos: m2, zona, precio...
+Subclases: piso, casa, chalet...
 
-## Enlaces de interés
+## Ejercicio 4:
 
-* [Mi canal de YouTube](http://youtube.com/dadvancedpsp)
-* [Facebook de mi canal de YouTube](http://facebook.com/dadvancedpsp)
+### Piensa en la liga de baloncesto, ¿qué 5 clases se te ocurren para representar
+### 5 elementos distintos que intervengan en la liga?
 
-Espero que te guste éste repositorio de GitHub, si es así, dale una
-estrellita. :star:
+- Equipos
+- Jugadores
+- Canchas
+- Partido
+- Arbitro
+
+## Ejercicio 5:
+### Haz una lista con los atributos que podría tener la clase caballo. A continuación
+### haz una lista con los posibles métodos (acciones asociadas a los caballos).
+
+peso, color, sexo, herradura, crinCortado, nombre, fecha_Nacimiento...
+correr, dormir, comer, aparearse, relinchar, darCoz.
+
+## Ejercicio 6:
+### Lista los atributos de la clase Alumno ¿Sería nombre uno de los atributos de la
+### clase? Razona tu respuesta.
+
+nombre, dni, edad, sexo, curso, notas, matricula...
+Si, nombre sería uno de los atributos dado que cada alumno tiene el suyo propio y necesitaría ese atributo si quisiera un listado de los nombres de los alumnos.
+
+
