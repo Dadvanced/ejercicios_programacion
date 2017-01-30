@@ -62,6 +62,9 @@ Si, nombre sería uno de los atributos dado que cada alumno tiene el suyo propio
 ###ventana de cualquier programa.
 
 Atributos: 
+- tamañoPredeterminado (en píxels, por ejemplo: 400x600)
+- modoVista (lista, iconos grandes, iconos pequeños... etc)
+
 Métodos: minimizar, maximizar, cerrar, asanchar, estrechar, alargar, acortar, redimensionar.
 
 
