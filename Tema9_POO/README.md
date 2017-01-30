@@ -56,4 +56,12 @@ correr, dormir, comer, aparearse, relinchar, darCoz.
 nombre, dni, edad, sexo, curso, notas, matricula...
 Si, nombre sería uno de los atributos dado que cada alumno tiene el suyo propio y necesitaría ese atributo si quisiera un listado de los nombres de los alumnos.
 
+## Ejercicio 7:
+###¿Cuáles serían los atributos de la clase Ventana (de ordenador)? ¿cuáles serían
+###los métodos? Piensa en las propiedades y en el comportamiento de una
+###ventana de cualquier programa.
+
+Atributos: 
+Métodos: minimizar, maximizar, cerrar, asanchar, estrechar, alargar, acortar, redimensionar.
+
 
