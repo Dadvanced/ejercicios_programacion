@@ -11,11 +11,11 @@ public abstract class Vehiculos {
   
 
   public static int getKilometrosTotales() {
-    return kilometrosTotales;
+    return Vehiculos.kilometrosTotales;
   }
   
   public static int setKilometrosTotales(int n) {
-    return kilometrosTotales += n;
+    return Vehiculos.kilometrosTotales += n;
   }
   
   

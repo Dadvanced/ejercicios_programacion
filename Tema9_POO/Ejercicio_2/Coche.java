@@ -10,11 +10,11 @@ public class Coche extends Vehiculos {
   
   
   public Coche() {
-    kilometrosRecorridos = 0;
+    this.kilometrosRecorridos = 0;
   }
   
   public int getKilometrosRecorridos() {
-    return kilometrosRecorridos;
+    return this.kilometrosRecorridos;
   }
   
   public void andaCoche() {

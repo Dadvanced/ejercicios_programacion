@@ -46,52 +46,52 @@ public class PruebaClases {
       
       switch (option) {
         case 1:
-        triumph.andaBicicleta();
-        System.out.println();
-        System.out.println();
-        opcionCorrecta = false;
+          triumph.andaBicicleta();
+          System.out.println();
+          System.out.println();
+          opcionCorrecta = false;
         break;
         
         case 2:
-        triumph.caballito();
-        System.out.println();
-        System.out.println();
-        opcionCorrecta = false;
+          triumph.caballito();
+          System.out.println();
+          System.out.println();
+          opcionCorrecta = false;
         break;
         
         case 3:
-        ford.andaCoche();
-        System.out.println();
-        System.out.println();
-        opcionCorrecta = false;
+          ford.andaCoche();
+          System.out.println();
+          System.out.println();
+          opcionCorrecta = false;
         break;
         
         case 4:
-        ford.quemaRueda();
-        System.out.println();
-        System.out.println();
-        opcionCorrecta = false;
+          ford.quemaRueda();
+          System.out.println();
+          System.out.println();
+          opcionCorrecta = false;
         break;
         
         case 5:
-        System.out.println("\n" + triumph.getKilometrosRecorridos() + " kilómetros");
-        System.out.println();
-        System.out.println();
-        opcionCorrecta = false;
+          System.out.println("\n" + triumph.getKilometrosRecorridos() + " kilómetros");
+          System.out.println();
+          System.out.println();
+          opcionCorrecta = false;
         break;
         
         case 6:
-        System.out.println("\n" + ford.getKilometrosRecorridos() + " kilómetros");
-        System.out.println();
-        System.out.println();
-        opcionCorrecta = false;
+          System.out.println("\n" + ford.getKilometrosRecorridos() + " kilómetros");
+          System.out.println();
+          System.out.println();
+          opcionCorrecta = false;
         break;
         
         case 7:
-        System.out.println("\nLos kilómetros totales son: " + Vehiculos.getKilometrosTotales() + " kilometros");
-        System.out.println();
-        System.out.println();
-        opcionCorrecta = false;
+          System.out.println("\nLos kilómetros totales son: " + Vehiculos.getKilometrosTotales() + " kilometros");
+          System.out.println();
+          System.out.println();
+          opcionCorrecta = false;
         break;
         
         default:
