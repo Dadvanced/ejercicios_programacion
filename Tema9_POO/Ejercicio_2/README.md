@@ -17,9 +17,10 @@ Instancias: Fernando Alonso, Schumacker...
 ### pirita, rocinante, milu, snoopy, gato, pluto, animal, javier, bucefalo, pegaso,
 ### ayudante_de_santa_claus, cuarzo, laika, persona, pato_lucas.
 
-Persona: paula, javier.
+Persona: paula, tomb, silvestre, javier, laika.
 
-Animal: (Perro)goofy, (Gato)gardfiel, (Caballo)rocinante, (Perro)milu, (Perro)snoopy, (Perro)pluto, (Caballo)bucefalo, (Gato)silvestre, (Gato)tom (Caballo)pegaso, (Perro)ayudante_de_santa_claus, pato_lucas, (Perro)laika.
+Animal: goofy, gardfiel, perro, caballo, rocinante, milu, snoopy, gato, pluto, bucefalo,
+pegaso, ayudante_de_santa_claus, pato_lucas.
 
 Mineral: pirita, cuarzo, 
 
