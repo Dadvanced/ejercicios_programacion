@@ -83,7 +83,7 @@ public class PruebaClases {
                 break;
               
               case 5:
-                System.out.println("¿Quieres tirarle la pelota o usar la cuerda? (escríbelo).");
+                System.out.println("(escribe pelota, cuerda u otro objeto).");
                 juego = n.nextLine();
                 snoopy.jugar(juego);
                 break;
@@ -287,6 +287,7 @@ public class PruebaClases {
           
           case 8:
             exit = true;
+            exitSubmenu = true;
             break;
           
           default:
@@ -313,9 +314,9 @@ public class PruebaClases {
     System.out.println("[2]: Michu (gato)");
     System.out.println("[3]: Orus (Ave)");
     System.out.println("[4]: Piolín (Canario)");
-    System.out.println("[5]: Pingu (Pingüino");
+    System.out.println("[5]: Pingu (Pingüino)");
     System.out.println("[6]: Izu (Lagarto)");
-    System.out.println("[7]: Simba (Mamifero");
+    System.out.println("[7]: Simba (Mamifero)");
     System.out.println();
     System.out.println("[8]: Salir del programa");
   }
@@ -327,7 +328,7 @@ public class PruebaClases {
     System.out.println("[2]: Hacer ladrar al perro.");
     System.out.println("[3]: Que olfatee el suelo.");
     System.out.println("[4]: Jugar con él.");
-    System.out.println("[5]: Jugar con él usando una pelota o una cuerda (escribe pelota o cuerda).");
+    System.out.println("[5]: Jugar con él usando una pelota o una cuerda.");
     System.out.println("[6]: Volver al menú.");
   }
   

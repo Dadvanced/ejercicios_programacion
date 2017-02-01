@@ -13,6 +13,7 @@ public class Animal {
   private float altura;
   
   public Animal() {
+    this.raza = "";
   }
   
   public String getRaza() {
