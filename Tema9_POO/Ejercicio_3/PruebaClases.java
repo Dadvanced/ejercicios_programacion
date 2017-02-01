@@ -68,35 +68,35 @@ public class PruebaClases {
             switch (option2) {
               case 1:
                 System.out.println("El tipo de perro es: " + snoopy.getTipo());
-              break;
+                break;
               
               case 2:
                 snoopy.ladra();
-              break;
+                break;
               
               case 3:
                 snoopy.rastrea();
-              break;
+                break;
               
               case 4:
                 snoopy.jugar();
-              break;
+                break;
               
               case 5:
                 System.out.println("¿Quieres tirarle la pelota o usar la cuerda? (escríbelo).");
                 juego = n.nextLine();
                 snoopy.jugar(juego);
-              break;
+                break;
               
               case 6:
                 exitSubmenu = true;
                 limpiaPantalla();
-              break;
+                break;
               
               default:
                 System.out.println("Opción incorrecta.");
             } //switch submenú perro
-          break;
+            break;
           
           case 2:
             System.out.println();
@@ -107,30 +107,30 @@ public class PruebaClases {
               switch (option2) {
                 case 1:
                   michu.maulla();
-                break;
+                  break;
                 
                 case 2:
                   michu.ronronea();
-                break;
+                  break;
                 
                 case 3:
                   michu.asea();
-                break;
+                  break;
                 
                 case 4:
                   System.out.print("Michu "); 
                   michu.corre();
-                break;
+                  break;
                 
                 case 5:
                   exitSubmenu = true;
                   limpiaPantalla();
-              break;
+                break;
                 
                 default:
                   System.out.println("Opción incorrecta.");
               } //switch submenú gato
-          break;
+            break;
           
           case 3:
             System.out.println();
@@ -141,24 +141,24 @@ public class PruebaClases {
             switch (option2) {
               case 1:
                 orus.asea();
-              break;
+                break;
               
               case 2:
                 orus.vuela();
-              break;
+                break;
               
               case 3:
                 orus.incubaHuevo();
-              break;
+                break;
               
               case 4:
                 orus.duerme();
-              break;
+                break;
               
               case 5:
                 exitSubmenu = true;
                 limpiaPantalla();
-            break;
+              break;
               
               default:
                 System.out.println("Opción incorrecta.");
@@ -174,25 +174,25 @@ public class PruebaClases {
             switch (option2) {
               case 1:
                 piolin.pia();
-              break;
+                break;
               
               case 2:
                 piolin.asea();
-              break;
+                break;
               
               case 3:
                 piolin.come();
-              break;
+                break;
               
               case 4:
                 exitSubmenu = true;
                 limpiaPantalla();
-            break;
+              break;
               
               default:
                 System.out.println("Opción incorrecta.");
             } //switch submennú canario
-          break;
+            break;
           
           case 5:
             System.out.println();
@@ -203,25 +203,25 @@ public class PruebaClases {
             switch (option2) {
               case 1:
                 pingu.desliza();
-              break;
+                break;
               
               case 2:
                 pingu.nada();
-              break;
+                break;
               
               case 3:
                 pingu.vuela();
-              break;
+                break;
               
               case 4:
                 exitSubmenu = true;
                 limpiaPantalla();
-            break;
+              break;
               
               default:
                 System.out.println("Opción incorrecta.");
             } //switch submenú pinguino
-          break;
+            break;
             
           case 6:
             System.out.println();
@@ -232,21 +232,21 @@ public class PruebaClases {
             switch (option2) {
               case 1:
                 izu.hazAlgo();
-              break;
+                break;
               
               case 2:
                 izu.camuflarse();
-              break;
+                break;
               
               case 3:
                 izu.setRaza("iguana");
                 izu.camuflarse();
-              break;
+                break;
               
               case 4:
                 exitSubmenu = true;
                 limpiaPantalla();
-            break;
+              break;
             
               default:
                 System.out.println("Opción incorrecta.");
@@ -263,31 +263,31 @@ public class PruebaClases {
               case 1:
                 simba.setDieta("carne");
                 System.out.println("La dieta de Simba es: " + simba.getDieta());
-              break;
+                break;
               
               case 2:
                 simba.asea();
-              break;
+                break;
               
               case 3:
                 System.out.println("Escriba el alimento que desee dar de comer a Simba:");
                 alimento = n.nextLine().toLowerCase();
                 simba.come(alimento);
-              break;
+                break;
               
               case 4:
                 exitSubmenu = true;
                 limpiaPantalla();
-            break;
+                break;
               
               default:
                 System.out.println("Opción incorrecta.");
             } //switch submenú mamifero
-          break;
+            break;
           
           case 8:
             exit = true;
-          break;
+            break;
           
           default:
             System.out.println("Opción incorrecta.");
