@@ -58,8 +58,7 @@ public class Pizza {
   ////////////////////////////MÉTODOS////////////////////////////////7
   
   public String toString() {
-    String datosPizza = "\npizza " + this.tipo + " " + this.size + ", " + this.estado
-    + "\n";
+    String datosPizza = "\npizza " + this.tipo + " " + this.size + ", " + this.estado + "\n";
     
     return datosPizza;
   }
