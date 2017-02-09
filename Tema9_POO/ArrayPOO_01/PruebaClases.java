@@ -20,13 +20,13 @@ public class PruebaClases {
     System.out.println();
     System.out.println("____________________________________________");
     
-    for (int i = 0; i < gatitos.length; i++) { //Mostramos la información de cada objeto "gato"
-      System.out.println("Gatito " + (i + 1));
-      System.out.println("Raza: " + gatitos[i].getRaza());
-      System.out.println("Sexo: " + gatitos[i].getSexo());
-      System.out.println("Color: " + gatitos[i].getColor());
-      System.out.println("Peso: " + gatitos[i].getPeso());
-      System.out.println("Altura: " + gatitos[i].getAltura());
+    for (Gato g : gatitos) { //Mostramos la información de cada objeto "gato"
+      System.out.println("Gatito:");
+      System.out.println("Raza: " + g.getRaza());
+      System.out.println("Sexo: " + g.getSexo());
+      System.out.println("Color: " + g.getColor());
+      System.out.println("Peso: " + g.getPeso());
+      System.out.println("Altura: " + g.getAltura());
       
       System.out.println();
       System.out.println();
