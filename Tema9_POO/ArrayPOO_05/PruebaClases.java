@@ -260,9 +260,14 @@ public class PruebaClases {
       if (cod == p.getCodigo()) {
         System.out.print("\n¿Cuánto stock ha salido?: ");
         newStock = Integer.parseInt(n.nextLine());
-        p.setStock(p.getStock() - newStock);
-
-        System.out.println("\nEl nuevo stock se ha añadido correctamente.");
+        
+        if (newStock > p.getStock) {
+          System.out.println("\nNo se pueden sacar más productos de los que hay en stock");
+        } else {
+          p.setStock(p.getStock() - newStock);
+          System.out.println("\nEl nuevo stock se ha añadido correctamente.");
+          modificado = true;
+        }
       }
     }
 
