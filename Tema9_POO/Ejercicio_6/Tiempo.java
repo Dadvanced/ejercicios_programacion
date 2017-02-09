@@ -61,13 +61,14 @@ public class Tiempo {
       sumaS -= 60;
     }
     
-    sumaM = this.minutos + reloj2.minutos;
+    
+    sumaM += this.minutos + reloj2.minutos;
     if (sumaM >= 60) {
       sumaH++;
       sumaM -= 60;
     }
     
-    sumaH = this.horas + reloj2.horas;
+    sumaH += this.horas + reloj2.horas;
     if (sumaH >= 24) {
       sumaH -= 24;
     }
