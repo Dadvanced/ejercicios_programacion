@@ -8,7 +8,7 @@ public class Ejercicio3 {
   public static void main(String[] args) {
     
     String name = "David";
-    String direction = "Pizarra, Málaga";
+    String direction = "Málaga";
     int phone = 666555666;
 
     System.out.println("mi nombre es: " + name);
